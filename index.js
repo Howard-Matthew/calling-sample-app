@@ -60,7 +60,7 @@ const main = async () => {
     // Quickstart code goes here
     const connectionString = process.env.COMMUNICATION_SERVICES_CONNECTION_STRING;
     console.log(connectionString);
-    
+
     // Instantiate the identity client
     const identityClient = new CommunicationIdentityClient(connectionString);
     let identityResponse = await identityClient.createUser();
@@ -123,7 +123,7 @@ startCallButton.onclick = async () => {
     }
 }
 
-/**
+/***
  * Join a Teams meeting
  */
 teamsMeetingJoinButton.onclick = async () => {
